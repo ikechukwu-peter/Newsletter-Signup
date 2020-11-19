@@ -38,11 +38,11 @@ app.post("/", (req, res)=> {
     const JSONData = JSON.stringify(data)
 
 
-    const url = "process.env.URL"
+    const url =     `${process.env.URL}`
 
     const options = {
         method: "POST",
-        auth: "process.env.AUTH"
+        auth: `${process.env.AUTH}`
     }
     
 
